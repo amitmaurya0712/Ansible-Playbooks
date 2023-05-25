@@ -1,0 +1,9 @@
+---
+- name:  "This will install httpd apache version of latest."
+  hosts: localhost
+  become: yes 
+  tasks:
+    - name: "Install httpd"
+      apt:
+        name: httpd
+        state: latest
